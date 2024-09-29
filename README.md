@@ -1,6 +1,6 @@
 # 小报童精选专栏导航站
 
-![xiaobot.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/74f2291c49354312a521a37d59a4f29f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=pZQX8Ih5KBQKufG2KezEP77JHPY%3D)
+![xiaobot-navigation-site](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgo/xiaobot.png)
 
 传送门：[点击直达](https://paperboy.site/)
 
@@ -12,7 +12,7 @@
 
 小报童导航站，主要就是收集一些专栏展示在上面，用户点击后可以跳转到小报童官方站，进行查看和订阅。这个内容形式就很像博客列表，所以我直接从Vercel找了个模板，作为整个项目的基础。
 
-![vercel-templates](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/7343e7d22391447fb94745650cecef51~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=TZ4L%2FJXDqPx74LjeTDTlFzOdW38%3D)
+![vercel-templates](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgovercel-templates.png)
 
 最终选了一个很[简洁的模板](https://vercel.com/templates/next.js/nextjs-contentlayer)
 
@@ -33,13 +33,13 @@
 
 直接运行起来的样子，特别的简洁：
 
-![vercel-blog-starter](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/c9bc4c8eefb54229846ca529fad81e20~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=pz9%2FRRw%2F4qQeSvssuBQFdIRg%2BTc%3D)
+![vercel-blog-starter](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgoQQ_1727149688715.png)
 
 ## 数据哪里来
 
 网站基础框架有了，接下来就是填充数据，小报童那么多专栏，一个个手动填充是个大工程，现在这么多小报童导航站，会不会已经有人整理好并且开源了？去Github逛一下。没想到还真的有
 
-![github-xiaobot](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/cab3680964184877bbc8ed566b1a6c7b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=9gO7FobC79rhu%2B30kstwSQEutqQ%3D)
+![github-xiaobot](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgo/QQ_1727149983878.png)
 
 简单收集整理一下，过程不表。
 
@@ -65,11 +65,11 @@
 
 可以发现，我想要的信息其实都在这一个页面里面
 
-![小报童专栏页面](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/c658ed4791164945bc28a8450a2256c1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=ALoXtUd1nHB1zxU6vES8WiGgHsA%3D)
+![小报童专栏页面](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgo/QQ_1727154883394.png)
 
 爬虫这种事，当然是交给AI做啦。我要做的就是打开Web调试，找到对应的html标签，描述给AI，让它帮我生成这个爬虫程序。
 
-![QQ\_1727155209254](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/24ef6ee9707541b0a2a8412d5dea41b4~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=bVgX9igkGWQ1zaP2fe%2FzYe9evCA%3D)
+![AI生成爬虫程序](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgo/QQ_1727155209254.png)
 
 经过几轮对话和修改，终于完美实现我的需求。
 
@@ -79,7 +79,7 @@
 
 现在的博客列表只能展示标题和描述，看着有点单调。不懂设计如何快速优化？答案是上[TailwindCSS](https://tailwindui.com/components)找个合适的组件。
 
-![tailwind-component](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/29cdc66ac1864091ad32d0191ffae928~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=poJGK%2Bg6BgLMTlj6XMVwsHYd15Y%3D)
+![tailwind-component](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgo/QQ_1727161482081.png)
 
 这个看起来挺好，直接将代码拷贝过来。填充一下数据，得到现在[首页](https://paperboy.site)的样子啦
 
@@ -89,13 +89,13 @@
 
 单纯的平铺展示几百条数据，用户依然难以找到想要的专栏。因为数据源本来就有标签，所以加个标签筛选并不是难事。依然是上[TailwindCSS]()找个过滤器组件
 
-![tailwindui-filter](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/69735e4b7bea4cde8eebbc7665403a4f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=%2F983mvp%2F9pk0UJMlS94iUiPsAgc%3D)
+![tailwindui-filter](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgo/QQ_1727161845920.png)
 
 这个很合适，可惜是付费组件，永久解锁需要299刀！要是299元我考虑下就直接付费了，299刀可不是个小数目呀。直接截图扔给ChatGPT，让它给实现吧
 
 最终效果还不错，不说颜值，功能肯定是满足了
 
-![小报童专栏 - 筛选](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/740d2489c8514bd885d8689b33cf28f1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgU2FsYWTlj6_kuZA=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzg2NjU0NjY3MDI2NjM3In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1728190749&x-orig-sign=h8EyHU81m%2F1auzO3L%2ByV7W8wQDY%3D)
+![小报童专栏 - 筛选](https://img-1254434880.cos.ap-shanghai.myqcloud.com/picgo/QQ_1727162100642.png)
 
 接下来再实现一个搜索功能，在分类筛选的基础上修改，代码非常简单，只需要一行
 
